@@ -1,6 +1,7 @@
 require 'action_mailer'
 require 'postmark'
 require 'postmark_delivery_method'
+require "postmark_response_extension"
 
 module PostmarkInstaller
   extend self

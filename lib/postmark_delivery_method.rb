@@ -20,7 +20,7 @@ module PostmarkDeliveryMethod
   end
   
   def perform_delivery_postmark(message)
-    Postmark.send_through_postmark(message)
+    message.postmark_response = Postmark.send_through_postmark(message)
   end
 
   def tag(value)
